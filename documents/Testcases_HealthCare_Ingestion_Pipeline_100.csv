@@ -1,0 +1,962 @@
+module,testCaseId,preRequisites,title,text,steps,expectedResults,automationManual,priority,createdBy,risk,version,type
+Registration,TC_001,Counter shift should be started for User,Normal Registration,Verify Normal registration,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Select Type of registration as “Normal”
+5.Enter  the  Mandatory Details which are having asterisk(*)symbol and click on the “Register” button.
+6.Enter Payment details by selecting payment mode as CARD/CASH etc
+7.Click on submit button",Valid UHID should get generate with details and should be able to take the print of that receipt,Automation,P2,Sumitha,High,V7,Function 
+Registration,TC_002,Valid Mothers UHID,Baby of Registration,Verify Baby of Registration,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Select Type of registration as “Baby OF”
+5.Enter  the  Mandatory Details which are having asterisk(*)symbol and click on the “Register” button.
+6.Enter Payment details by selecting payment mode as CARD/CASH etc
+7.Click on submit button",Valid UHID for Baby should get generate with details and should be able to take the print of that receipt,Automation,P2,Sumitha,High,V11,Function 
+Registration,TC_003,,PRN Registration,Verify PRN Registration,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Select Registration type as ""PRN"" 
+5.Enter  the  Mandatory Details which are having asterisk(*)symbol and click on the “Register” button.",Valid UHID should get generate,Automation,P2,Sumitha,High,V4,Function 
+Registration,TC_004,Valid UHID /Any existing Patient details,Update details,"Verify ""Update details"" feature by updating existing Patient details","1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Click on patient search link
+5.Enter valid UHID or patient details like first name ,last name and gender for search and click on search button
+6.Right click on UHID click on Update details and do some changes like change title or marital status.
+7.Click on Update record.",Details should get update Successfully,Automation,P2,Sumitha,High,V1,Function 
+Registration,TC_005,PRN/ERN Number,Conversion from PRN/ERN Reg to UHID,Verify Conversion from PRN/ERN Reg to UHID,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Click on patient search link
+5.Enter input values like PRN/ERN and click on search button
+6.Right click on PRN/ERN and click on convert to UHID link 
+7.Enter mandatory Details which are having asterisk(*)symbol and click on convert to UHID button
+8.Enter Payment details by selecting payment mode as CARD/CASH etc
+9.Click on submit button",Should get convert successfully from PRN/ERN Reg to UHID,Automation,P2,Sumitha,High,V4,Function 
+Registration,TC_006,Valid old UHID,OLD to New UHID conversion,Verify OLD to New UHID conversion,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Select Already have UHID in legacy data as ""Yes"".
+5.Enter  the  Mandatory Details which are having asterisk(*)symbol and click on the “Register” button.
+6.Enter Payment details by selecting payment mode as CARD/CASH etc
+7.Click on submit button",Should get convert successfully from OLD to New UHID,Automation,P2,Sumitha,High,V12,Function 
+Registration,TC_007,Valid UHID /Any existing Patient details,Patient Search,"Verify ""Patient Search"" functionality","1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Click on patient search link
+5.Enter input values for UHID/First name and last name & gender and click on search button",Searched patient details should be displayed,Automation,P2,Sumitha,High,V2,Function 
+Registration,TC_008,Valid From and to Date,OP Search,Verify OP Search Functionality,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Click on OP Search link
+5.Enter the input values like Uhid/From date and To date/Location click on report
+6.Click on Export to Excel button (if required)",Consultation report should get generate,Automation,P2,Sumitha,High,V3,Function 
+Registration,TC_009,Valid UHID /Any existing Patient details,Regularization of Quick Registration,"Verify ""Regularization of Quick Registration""","1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Click on patient search link
+5.Enter input values UHID/First name and last name & gender for search and click on search button
+6.Right click on Quick Registration UHID and click on Regularize UHID link 
+7.Click on Regularize UHID button
+8.Select payment mode and complete the registration",,Automation,P2,Sumitha,High,V13,Function 
+Registration,TC_010,Employee ID,Corporate Registration,"Verify ""Corporate  Registration""","1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Select Type of registration as “Corporate Health Care”       
+5. Enter Employee Id of any associate with respective Title.                                   
+6.Click on Get Details button. 
+7. Check Yes for International patients and enter the mandatory  fields which are having asterisk(*)symbol.
+8.Enter mandatory Details which are having asterisk(*)symbol and click on Register button
+9.Enter Payment details by selecting payment mode as CARD/CASH etc
+10.Click on submit button",Corporate registration ID should generate successfully,Automation,P2,Sumitha,High,V5,Function 
+Registration,TC_011,Corporate ID and Corporate Employee ID,Corporate Non-Hospital Registration,Verify Corporate Non-Hospital Registration,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Select Type of registration as “Corporate Non-Health Care”    
+5. Enter Corporate Id and Corporate Employee Id of associate with respective Title.                                6.Click on “Add new” button and enter all the corporate details.                                
+7. Check Yes for International patients and enter the mandatory  fields which are having asterisk(*)symbol.
+8.Enter mandatory Details which are having asterisk(*)symbol and click on Register button
+9.Enter Payment details by selecting payment mode as CARD/CASH etc
+10.Click on submit button",,Automation,P2,Sumitha,High,V10,Function 
+Registration,TC_012,,International Patient Registration,Verify International Patient Registration,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Select Type of registration as “Normal”    and type as UHID.      
+5.Check Yes for International patients and enter the mandatory  fields which are having asterisk(*)symbol.
+6.Enter mandatory Details which are having asterisk(*)symbol and click on Register button
+7.Enter Payment details by selecting payment mode as CARD/CASH etc
+10.Click on submit button",Successfully International patient should get registered,Automation,P2,Sumitha,High,V1,Function 
+Registration,TC_013,,Quick Registration,Verify To generate UHID with Quick Registration,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Functions->Registration->Quick Registration
+5.Select Registration type as UHID.
+6.Select Type of registration as “Normal”.
+7.Enter  the  Mandatory Details which are having asterisk(*)symbol and click on the “Register” button.
+",UHID should get generate for Quick Registration,Automation,P2,Sumitha,High,V2,Function 
+Registration,TC_014,Event ID,Event Registration,Verify To generate UHID with Event Registration,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Select Type of Registration as “Event” and Registration type as UHID.
+5. Enter  the  Mandatory Details which are having asterisk(*)symbol and click on the “Register” button.
+6. Select payment mode from payment details and complete the registration           ",UHID should get generate for Event Registration,Automation,P2,Sumitha,High,V16,Function 
+Registration,TC_015,Campaign name,Campaign Registration,Verify To generate UHID with Campaign Registration,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Select Type of Registration as “Campaign ""and Registration type as UHID. 
+5.Select the Campaign name from drop down.
+6. Enter  the  Mandatory Details which are having asterisk(*)symbol and click on the “Register” button.
+7.Select payment mode from payment details  and Click on Submit button    ",UHID should get generate for Campaign Registration,Automation,P2,Sumitha,High,V9,Function 
+Registration,TC_016,Batch ID,Camp Batch Registration,Verify To register a Camp members  at one time in a batch mode,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Functions->Camp->Batch
+5.Click The download excel template for Employee Batch link
+6. Save the template           
+7.Click on Link ""Check Previous Batch Process""
+8.Give From Date and To Date
+9.Click on ""Go""
+10.Give Batch ID and click on Search
+11.Click on Failed Records button.                        
+12.Select document to upload
+13.Click Browse button
+14.Select proper document to upload
+15.Click Show Details",,Automation,P2,Sumitha,High,V11,Function 
+Registration,TC_017,,UHID with Cash Payment,Verify To generate UHID with Cash Payment,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Select Type of registration as “Normal”                                                               5.Check Yes for International patients and enter the mandatory  fields.
+6.Enter  the  Mandatory Details which are having asterisk(*) symbol and click on the “Register” button.
+7.Check the transaction billable check box and check the “Cash”  payment mode in Payment details. (By default the transaction check box is checked).
+8. Select the Currency and give currency amount in Cash details(Total cash amount should be equivalent to the billable amount)",UHID should get generate with cash Payment,Automation,P2,Sumitha,High,V12,Function 
+Registration,TC_018,,UHID with Card Payment,Verify To generate UHID with Card Payment,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Select Type of registration as “Normal”                                                               5.Check Yes for International patients and enter the mandatory  fields.
+6.Enter  the  Mandatory Details which are having asterisk(*) symbol and click on the “Register” button.
+7.Check the transaction billable check box and check the “Card”  payment mode in Payment details. (By default the transaction check box is checked) provide the required details and do payment.",UHID should get generate with card Payment,Automation,P2,Sumitha,High,V4,Function 
+Registration,TC_019,,Emergency Registration,Verify To generate ERN with Emergency Registration,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4. Function --> Registration->Emergency
+5.Enter the mandatory details which are having asterisk(*) symbol and Click on Register button
+",ERN Number should get generate,Automation,P2,Sumitha,High,V2,Function 
+Registration,TC_020,Valid UHID,Sticker Generation,Verify To Generate Sticker,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Select Sticker Generation from the registration screen.
+5.Enter Valid UHID Number and select No . Of copies required.
+6.Click on Go button",Stickers should get generate with the number of copies entered.,Automation,P2,Sumitha,High,V12,Function 
+Registration,TC_021,,Update Insurance details,Verify updating insurance details to UHID,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4.Click on Patient search link and enter valid input values UHID/First name and last name & gender and click on search
+5.Select UHID and right click on ""update insurance"" details
+6.Make the required changes
+7.Click on save",Insurance details should get update for the selected UHID,Automation,P2,Sumitha,High,V15,Function 
+Registration,TC_022,Valid UHID number or PRN number,Upload a document ,Verify To Upload a document against a patient ,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select Registration from the drop down.
+4. Navigate to Transaction->Upload 
+5.Enter any UHID or PRN and click on show details button.
+6.Click on Browse button and select any of the file type(.xls, .doc, .gif, .jpeg, .pdf, .bmp) 
+7.Click on Upload record.
+8.Select any other file and Click on Document link against the UHID.",User Should be able to Upload Records,Automation,P2,Sumitha,High,V12,Function 
+Admin,TC_051,,Audit Home,,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Audit
+-> Audit Home.",,,P2,Sankar,High,V5,Function 
+Admin,TC_052,,Audit Reports,,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Audit
+-> Audit Reports.",,,P2,Sankar,High,V4,Function 
+Admin,TC_053,, AHC -> Adding Role ,To verify the user able to Add the role to AHC.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Right click  on AHC and select ""Add Role"".
+6.Enter  the Role Name and click on the “Add” button.",Role should be add to AHC,Manual,P1,Sankar,Critical,V18,Function 
+Admin,TC_054,,AHC -> AHC CONSULTANT -> Rename Role,To verify the user able to Rename the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on AHC CONSULTANT and select Rename Role .
+7.Enter  the Role Name and click on the “Rename” button.",Role name should be Rename,Manual,P1,Sankar,Critical,V9,Function 
+Admin,TC_055,,AHC ->  AHC CONSULTANT -> Delete Role,To verify the user able to Delete the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on AHC CONSULTANT  and select Delete Role.
+7.Enter  the Role Name and click on the “Delete” button.",Role Name should be Deleted Successfully,Manual,P1,Sankar,Critical,V1,Function 
+Admin,TC_056,,AHC -> AHC DIETICIAN -> Rename Role,To verify the user able to Rename the role.,"""1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on  AHC DIETICAIN and select Rename Role .
+7.Enter  the Role Name and click on the “Rename” button.""",Role name should be Rename,Manual,P1,Sankar,Critical,V12,Function 
+Admin,TC_057,,AHC -> AHC DIETICIAN -> Delete Role,To verify the user able to Delete the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on AHC DIETICIAN  and select Delete Role.
+7.Enter  the Role Name and click on the “Delete” button.",Role Name should be Deleted Successfully,Manual,P1,Sankar,Critical,V7,Function 
+Admin,TC_058,,AHC -> AHC FLOOR MANAGER -> Rename Role,To verify the user able to Rename the role.,"""1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on AHC FLOOR MANAGER  and select Rename Role .
+7.Enter  the Role Name and click on the “Rename” button.""",Role name should be Rename,Manual,P1,Sankar,Critical,V16,Function 
+Admin,TC_059,,AHC -> AHC FLOOR MANAGER -> Delete Role,To verify the user able to Delete the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on  AHC FLOOR MANAGER and select Delete Role.
+7.Enter  the Role Name and click on the “Delete” button.",Role Name should be Deleted Successfully,Manual,P1,Sankar,Critical,V15,Function 
+Admin,TC_060,,AHC -> AHC FRONTOFFICE EXECUTIVE -> Rename Role,To verify the user able to Rename the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on AHC FRONTOFFICE EXCUTIVE  and select Rename Role .
+7.Enter  the Role Name and click on the “Rename” button.",Role name should be Rename,Manual,P1,Sankar,Critical,V18,Function 
+Admin,TC_061,,AHC -> AHC FRONTOFFICE EXECUTIVE -> Delete Role,To verify the user able to Delete the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on AHC FRONTOFFICE EXECUTIVE  and select Delete Role.
+7.Enter  the Role Name and click on the “Delete” button.",Role Name should be Deleted Successfully,Manual,P1,Sankar,Critical,V18,Function 
+Admin,TC_062,,AHC -> AHC HOD -> Rename Role,To verify the user able to Rename the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on AHC HOD  and select Rename Role .
+7.Enter  the Role Name and click on the “Rename” button.",Role name should be Rename,Manual,P1,Sankar,Critical,V14,Function 
+Admin,TC_063,,AHC -> AHC HOD -> Delete Role,To verify the user able to Delete the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on AHC HOD   and select Delete Role.
+7.Enter  the Role Name and click on the “Delete” button.",Role Name should be Deleted Successfully,Manual,P1,Sankar,Critical,V5,Function 
+Admin,TC_064,,AHC -> AHC REPORTS -> Rename Role,To verify the user able to Rename the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on AHC REPORTS  and select Rename Role .
+7.Enter  the Role Name and click on the “Rename” button.",Role name should be Rename,Manual,P1,Sankar,Critical,V16,Function 
+Admin,TC_065,,AHC -> AHC REPORTS -> Delete Role,To verify the user able to Delete the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on AHC REPORTS  and select Delete Role.
+7.Enter  the Role Name and click on the “Delete” button.",Role Name should be Deleted Successfully,Manual,P1,Sankar,Critical,V2,Function 
+Admin,TC_066,,AHC -> AHCPHLEBOTOMIST -> Rename Role,To verify the user able to Rename the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on AHCPHILEBOTOMIST  and select Rename Role .
+7.Enter  the Role Name and click on the “Rename” button.",Role name should be Rename,Manual,P1,Sankar,Critical,V11,Function 
+Admin,TC_067,,AHC -> AHCPHLEBOTOMIST -> Delete Role,To verify the user able to Delete the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on AHCPHLEBOTOMIST and select Delete Role.
+7.Enter  the Role Name and click on the “Delete” button.",Role Name should be Deleted Successfully,Manual,P1,Sankar,Critical,V7,Function 
+Admin,TC_068,,AHC -> BILLING EXECUTIVE -> Rename Role,To verify the user able to Rename the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on BILLING EXECUTIVE  and select Rename Role .
+7.Enter  the Role Name and click on the “Rename” button.",Role name should be Rename,Manual,P1,Sankar,Critical,V16,Function 
+Admin,TC_069,,AHC -> BILLING EXECUTIVE -> Delete Role,To verify the user able to Delete the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on BILLING EXECUTIVE  and select Delete Role.
+7.Enter  the Role Name and click on the “Delete” button.",Role Name should be Deleted Successfully,Manual,P1,Sankar,Critical,V2,Function 
+Admin,TC_070,,AHC -> CONSULTANT -> Rename Role,To verify the user able to Rename the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on  CONSULTANT and select Rename Role .
+7.Enter  the Role Name and click on the “Rename” button.",Role name should be Rename,Manual,P1,Sankar,Critical,V11,Function 
+Admin,TC_071,,AHC -> CONSULTANT -> Delete Role,To verify the user able to Delete the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on  CONSULTANT and select Delete Role.
+7.Enter  the Role Name and click on the “Delete” button.",Role Name should be Deleted Successfully,Manual,P1,Sankar,Critical,V7,Function 
+Admin,TC_072,,AHC -> COORDINATOR -> Rename Role,To verify the user able to Rename the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on COORDINATOR  and select Rename Role .
+7.Enter  the Role Name and click on the “Rename” button.",Role name should be Rename,Manual,P1,Sankar,Critical,V3,Function 
+Admin,TC_073,,AHC -> COORDINATOR -> Delete Role,To verify the user able to Delete the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on COORDINATOR  and select Delete Role.
+7.Enter  the Role Name and click on the “Delete” button.",Role Name should be Deleted Successfully,Manual,P1,Sankar,Critical,V5,Function 
+Admin,TC_074,,AHC -> DISEASE MANAGEMENT EXECUTIVE -> Rename Role,To verify the user able to Rename the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on DISEASE MANAGEMENT EXECUTIVE  and select Rename Role .
+7.Enter  the Role Name and click on the “Rename” button.",Role name should be Rename,Manual,P1,Sankar,Critical,V3,Function 
+Admin,TC_075,,AHC -> DISEASE MANAGEMENT EXECUTIVE -> Delete Role,To verify the user able to Delete the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on DISEASE MANAGEMENT EXECUTIVE  and select Delete Role.
+7.Enter  the Role Name and click on the “Delete” button.",Role Name should be Deleted Successfully,Manual,P1,Sankar,Critical,V17,Function 
+Admin,TC_076,,AHC -> GENERAL PHYSICIAN -> Rename Role,To verify the user able to Rename the role.,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on External Service Tab and select Admin from the drop down.
+4.Click on Navigation Menu -> Masters ->Roles -> AHC.
+5.Expand  AHC.
+6. Right click on GENERAL PHYSICIAN  and select Rename Role .
+7.Enter  the Role Name and click on the “Rename” button.",Role name should be Rename,Manual,P1,Sankar,Critical,V1,Function 
+AHC,TC_111,,Mastersetup->Map Visit Counter,To verify the user able to create Map Visit Counter.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Map Visit Counter.
+5.Click on Map Visit Counter.
+6.Select Location from the drop down.
+7.Enter Visit name  and Counter.
+8.Click on ""ADD"" button.
+
+ 
+",User should able to create Map Visit Counter.,Manual,P4,Sumitha,Low,V10,Function 
+AHC,TC_112,,Mastersetup->Map Visit Counter ->Delete,To verify the user able to delete Map Visit Counter.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Map Visit Counter.
+5.Click on Map Visit Counter.
+6.Select Location from the drop down.
+7.Enter Visit name  and Counter.
+8.Select the required record by clicking the check box.
+9.Click on ""Delete"" button.
+10.Click on ""OK"" button.
+
+ 
+",User should able to delete Map Visit Counter.,Manual,P4,Sumitha,Low,V2,Function 
+AHC,TC_113,,Mastersetup->Map Login Counter,To verify the user able to create Map Login Counter.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Map Login Counter.
+5.Click on Map Login Counter.
+6.Enter Login ID and select Counter.
+7.Click on ""ADD"" button.
+
+ 
+",User should able to create Map Login Counter.,Manual,P4,Sumitha,Low,V17,Function 
+AHC,TC_114,,Mastersetup->Map Login Counter ->Delete,To verify the user able to delete Map Login Counter.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Map Login Counter.
+5.Click on Map Login Counter.
+6.Enter Login ID and select Counter.
+7.Click on ""View"" button.
+8.Select the required record by clicking the check box.
+9.Click on ""Delete"" button.
+10.Click on ""OK"" button.
+
+ 
+",User should able to delete Map Login Counter.,Manual,P4,Sumitha,Low,V2,Function 
+AHC,TC_115,,Mastersetup->Map Machine Visit Counter,To verify the user able to create Map Machine Visit Counter.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Map Machine Visit Counter.
+5.Click Map Machine Visit Counter.
+6.Select Location, Counter name, Visit Name and 	Machine Name.
+7.Select Machine Status radio buttons On/Off.
+8.Click on ""Save"" button.
+ 
+",User should able to create Map Machine Visit Counter.,Manual,P4,Sumitha,Low,V4,Function 
+AHC,TC_116,,Mastersetup->Map Machine Visit Counter-> Update,To verify the user able to update Map Machine Visit Counter.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Map Machine Visit Counter.
+5.Click on Map Machine Visit Counter.
+6.Enter Machine code  and Machine name. 
+7.Select Location, Counter name, Visit Name and 	Machine Name.
+8.Select Machine Status radio buttons On/Off.
+9.Click on ""View"" button.
+10.Select the record and click on ""Update"" icon.
+11.Click on ""Update"" button.
+
+ 
+",User should able to update Map Machine Visit Counter.,Manual,P4,Sumitha,Low,V2,Function 
+AHC,TC_117,,Mastersetup->Map Machine Visit Counter-> Delete,To verify the user able to delete Map Machine Visit Counter.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Map Machine Visit Counter.
+5.Click on Map Machine Visit Counter.
+6.Enter Machine code  and Machine name. 
+7.Select Location, Counter name, Visit Name and 	Machine Name.
+8.Select Machine Status radio buttons On/Off.
+9.Click on ""View"" button.
+10.Select the record and click on ""Delete"" icon.
+11.Click on ""Ok"" button.
+
+ 
+",User should able to delete Map Machine Visit Counter.,Manual,P4,Sumitha,Low,V16,Function 
+AHC,TC_118,,Mastersetup->Map Machine Visit Counter-> Counter Status,To verify the user able to Map Machine/User.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Map Machine Visit Counter.
+5.Click Map Machine Visit Counter.
+6.Click on Counter Status link.
+7.Click on Counter Switch button(Green=On, Orange=Off) of a required record. 
+ 
+",User should able to Map Machine/User.,Manual,P4,Sumitha,Low,V16,Function 
+AHC,TC_119,,"Mastersetup->Map Machine Visit Counter-> Counter Status
+->Add",To verify the user able to Add Machine/User.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Map Machine Visit Counter.
+5.Click Map Machine Visit Counter.
+6.Click on Counter Status link.
+7.Click on Counter Switch button(Green=On, Orange=Off) of a required record.
+8.Click on Plus button.
+
+ 
+",User should able to Add Machine/User.,Manual,P4,Sumitha,Low,V11,Function 
+AHC,TC_120,,"Mastersetup->Map Machine Visit Counter-> Counter Status
+->Delete",To verify the user able to Delete Machine/User.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Map Machine Visit Counter.
+5.Click Map Machine Visit Counter.
+6.Click on Counter Status link.
+7.Click on Counter Switch button(Green=On, Orange=Off) of a required record.
+8.Click on minus button.
+
+ 
+",User should able to Delete Machine/User.,Manual,P4,Sumitha,Low,V5,Function 
+AHC,TC_121,,Mastersetup->Map Special Packages,To verify the user able to map Special Packages.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Map Special Packages.
+5.Click on Map Special Packages.
+6.Select PackageList.
+7.Click on ""Map"" button.
+ 
+",User should able to map Special Packages.,Manual,P4,Sumitha,Low,V9,Function 
+AHC,TC_122,,Mastersetup->Map Special Packages ->Delete,To verify the user able to delete Special Packages.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Map Special Packages.
+5.Click on Map Special Packages.
+6.Select PackageList.
+7.Click on ""View"" button.
+8.Click on ""Delete"" icon of required record.
+ 
+",User should able to delete Special Packages.,Manual,P4,Sumitha,Low,V10,Function 
+AHC,TC_123,,Mastersetup->Visit Sequence Mapping Master,To verify the user able to create Visit Sequence Mapping Master.,"
+1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Mastersetup
+->Visit Sequence Mapping Master.
+5.Click on Map Special Packages.
+6.Select Location.
+7.Select Diabetic radio button No/Yes.
+8.Select Package type radio button Corporate/Non corporate.
+7.Click on ""Map"" button.
+8.Select Gender.
+9.Click on ""Get Visits"" button.
+10.Select sequence of  required record by clicking drop down and change.
+11.Click on ""Save"" button.
+
+
+ 
+",User should able to create Visit Sequence Mapping Master.,Manual,P4,Sumitha,Low,V6,Function 
+AHC,TC_124,,Masters->Identify PackageVisits,Verify Identify PackageVisits map screen,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Identify PackageVisits
+5.Select Location from the drop down
+6.Select Package from the drop down
+7.Click on Map button
+8.Click on View (if required)",Package visits mapped successfully,Manual,P4,Sankar,Low,V2,Function 
+AHC,TC_125,,Masters->Identify PackageVisits,Verify Identify PackageVisits screen,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Identify PackageVisits
+5.Click on Package Visits link
+6.Select Location from the drop down
+7.Select Package from the drop down
+8.Select Yes,No for Is Diabetic as per patient
+9.Observe package and visits information 
+10.Click on Add button
+11.Click on Submit button
+12.Click on view button(if required)",,Manual,P4,Sankar,Low,V10,Function 
+AHC,TC_126,,Masters->Systems->Save,Verify Systems screen,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Systems
+5.Enter System name in edit box
+6.Select SystemicReview or ChiefComplaint check box 
+6.Click on save button
+7.Click on View button (if required)
+8.Click on clear button(if required)
+",System feature should add,Manual,P4,Sankar,Low,V9,Function 
+AHC,TC_127,,Masters->Systems->Update,Verify System Update feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Systems
+5.Click on Update button for SystemName ex: Skin,ENT etc
+6.Modify details like select check box/uncheck for SystemicReview or ChiefComplaint 
+7.Click on Save button",Systemic details should get update,Manual,P4,Sankar,Low,V16,Function 
+AHC,TC_128,Transaction data should not be available,Masters->Systems->Delete,Verify System delete feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Systems
+5.Click on delete button for SystemName ex: Skin,ENT etc
+6.Click ""Ok"" for alert Are you sure you want to delete this record ENT
+",Systemic details should get delete ,Manual,P4,Sankar,Low,V9,Function 
+AHC,TC_129,,Masters->Systems->System-Symptom Master,Verify System-Symptom Master screen,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Systems
+5.Click on System-Symptom  link
+6.Select System Name from the drop down
+7.Select the checkbox for Existing Symptoms
+8.Click on Save button
+9.Click on View or clear (if required)",System-Symptom should get saved,Manual,P4,Sankar,Low,V11,Function 
+AHC,TC_130,,Masters->Systems->Create New Symptom,Verify Create New Symptom ,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Systems
+5.Click on System-Symptom  link
+6.Click on Create new symptom link
+7.Enter Symptom name in edit box
+8.Select control type from the drop down
+9.Select Yes,No for Bold
+10.Select Yes,No for Display in Summary
+11.Select Yes,No for Mandatory
+12.Select Yes,No for Extract from last history
+13.Click on Save Symptom
+14.Click on View Symptom or clear (if required)
+15.Click on close ",New Symptom should get created,Manual,P4,Sankar,Low,V12,Function 
+AHC,TC_131,,Masters->Systems->Create New Symptom->Update,Verify Update feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Systems
+5.Click on System-Symptom  link
+6.Click on Create new symptom link
+7.Click on Update in the table
+8.Select symptom name,Control type or other feature and do the changes
+9.Click on Update symptom
+10.Click on View symptom or cancel(if required)",Record should get update,Manual,P4,Sankar,Low,V2,Function 
+AHC,TC_132,Transaction data should not be available,Masters->Systems->Create New Symptom->delete,Verify delete feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Systems
+5.Click on System-Symptom  link
+6.Click on Create new symptom link
+7.Click on delete in the table 
+8.Click OK or cancel for Relation With System Exists Are you sure you want to delete this record - alert",Record should get delete,Manual,P4,Sankar,Low,V3,Function 
+AHC,TC_133,,Masters->Systems->Symptom-Attribute Master,Verify Symptom-Attribute Master screen,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Systems
+5.Click on Symptom-Attribute  link
+6.Select System Name from the drop down
+7.Select the checkbox for Existing Attributes
+8.Click on Save button
+9.Click on View or clear (if required)",Symptom-Attribute Master should save data,Manual,P4,Sankar,Low,V7,Function 
+AHC,TC_134,,Masters->Systems->Symptom-Attribute Master->Create New attribute,Verify Create New attribute feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Systems
+5.Click on Symptom-Attribute link
+6.Click on Create new Attribute link
+7.Enter Attribute name in edit box
+8.Select control type from the drop down
+9.Select Color and click on Pick button and choose colors
+10.Select Yes,No for Bold
+11.Select Yes,No for Display in Summary
+12.Select Yes,No for Mandatory
+13.Select Yes,No for Extract from last history
+14.Click on Save Attribute 
+15.Click on View Attribute  or clear (if required)
+16.Click on close ",New Attribute should get created,Manual,P4,Sankar,Low,V13,Function 
+AHC,TC_135,,Masters->Systems->Symptom-Attribute Master->Create New attribute-Update,Verify Update feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Systems
+5.Click on Symptom-Attribute link
+6.Click on Create new Attribute link
+7.Click on update in the table
+8.Modify Attribute name,	Attribute value,Control type etc
+9.Click on Update Attribute 
+10.Click on View attribute or cancel (if required)",Record should get update,Manual,P4,Sankar,Low,V14,Function 
+AHC,TC_136,Transaction data should not be available,Masters->Systems->Symptom-Attribute Master->Create New attribute->Delete,Verify delete feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Systems
+5.Click on Symptom-Attribute link
+6.Click on Create new Attribute link
+7.Click on delete in table
+8.Click OK or cancel for Relation With System Exists Are you sure you want to delete this record - alert",Record should get delete,Manual,P4,Sankar,Low,V5,Function 
+AHC,TC_137,,Masters->Presentknownillness System,Verify Presentknownillness System feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Presentknownillness System
+5.Enter Presentknownillness System details in edit box
+6.Click on Save button
+7.Click on View or clear( if required)",Presentknownillness System details should get saved,Manual,P4,Sankar,Low,V10,Function 
+AHC,TC_138,,Masters->Presentknownillness System-Update,Verify Update feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Presentknownillness System
+5.Click on update in the table
+6.Edit Presentknownillness System details 
+7.Click on update button
+8.Click on View or clear( if required)",Record should get update,Manual,P4,Sankar,Low,V11,Function 
+AHC,TC_139,,Masters->Presentknownillness System->delete,Verify delete feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Presentknownillness System
+5.Click on delete in the table
+6.Click on ok or cancel buttons for ""Are you sure you want to delete this record Present known illness"" alert as required",Record should get delete,Manual,P4,Sankar,Low,V3,Function 
+AHC,TC_140,,Masters->Presentknownillness System->System symptom,Verify system symptom feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Presentknownillness System
+5.Click on system symptom link
+6.Select Present Known Illness System from the drop down
+7.Select Existing Parameters check boxes as required from the drop down
+8.Click on save button
+9.Click on view or clear (if required)",,Manual,P4,Sankar,Low,V15,Function 
+AHC,TC_141,,Masters->Presentknownillness System->System symptom->Create New parameter,Verify Create new parameter feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Presentknownillness System
+5.Click on system symptom link
+6.Click on Create New parameter
+7.Enter Parameter name in edit box
+8.Select control type from the drop down
+9.Select Yes,No for Bold
+10.Select Yes,No for Display in Summary
+11.Select Yes,No for Mandatory
+12.Select Yes,No for Extract from last history
+13.Click on Save Symptom
+14.Click on View Symptom or clear (if required)
+15.Click on close ",New parameter should get saved,Manual,P4,Sankar,Low,V16,Function 
+AHC,TC_142,Transaction data should not be available,Masters->Presentknownillness System->System symptom->Create New parameter->delete,Verify delete feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Presentknownillness System
+5.Click on system symptom link
+6.Click on Create New parameter
+7.Click on delete in table
+8.Click ""ok"" or Cancel button as required for alert ""Relation With System Exists Are you sure you want to delete this record AIDS""",Record should get delete,Manual,P4,Sankar,Low,V13,Function 
+AHC,TC_143,,Masters->Presentknownillness System->Symptom Attribute,Verify Symptom Attribute feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Presentknownillness System
+5.Click on Symptom Attribute link
+6.Select Parameter name from the drop down
+7.Select Existing Attributes checkboxes
+8.Click on Save button
+9.Click on View or clear(if required)",Symptom Attribute details should get saved,Manual,P4,Sankar,Low,V16,Function 
+AHC,TC_144,,Masters->Presentknownillness System->Symptom Attribute->Parameter,Verify Parameter feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Presentknownillness System
+5.Click on Symptom Attribute link
+6.Click on parameter column ""+"" button in table
+7.Click on delete button",Parameter should get deleted,Manual,P4,Sankar,Low,V4,Function 
+AHC,TC_145,,Masters->Presentknownillness System->Symptom Attribute->Create New Attribute,Verify Create New attribute feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Presentknownillness System
+5.Click on Symptom Attribute link
+6.Click on Create new Attribute link
+7.Enter Attribute name in edit box
+8.Select control type from the drop down
+9.Select Color and click on Pick button and choose colors
+10.Select Yes,No for Bold
+11.Select Yes,No for Display in Summary
+12.Select Yes,No for Mandatory
+13.Select Yes,No for Extract from last history
+14.Click on Save Attribute 
+15.Click on View Attribute  or clear (if required)
+16.Click on close ",New Attribute should get created,Manual,P4,Sankar,Low,V15,Function 
+AHC,TC_146,,Masters->Presentknownillness System->Symptom Attribute->Create New Attribute->update,Verify Update feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Presentknownillness System
+5.Click on Symptom Attribute link
+6.Click on Create new Attribute link
+7.Click on update in the table
+8.Modify Attribute name,	Attribute value,Control type etc
+9.Click on Update Attribute 
+10.Click on View attribute or cancel (if required)",Record should get update,Manual,P4,Sankar,Low,V13,Function 
+AHC,TC_147,,Masters->Presentknownillness System->Symptom Attribute->Create New Attribute->delete,Verify delete feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Presentknownillness System
+5.Click on Symptom Attribute link
+6.Click on Create new Attribute link
+7.Click on delete in table
+8.Click OK or cancel for Relation With System Exists Are you sure you want to delete this record - alert",Record should get delete,Manual,P4,Sankar,Low,V16,Function 
+AHC,TC_148,,Masters->Physical System,Verify Physical System feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Physical System
+5.Enter Physical Systemic details
+6.Click on save button
+7.Click on view or clear (if required)
+",Physical System  details should get saved,Manual,P4,Sankar,Low,V6,Function 
+AHC,TC_149,,Masters->Physical System->update,Verify Update feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Physical System
+5.Click on update icon in table
+",record should get update,Manual,P4,Sankar,Low,V16,Function 
+AHC,TC_150,Transaction data should not be available,Masters->Physical System->delete,Verify delete feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Physical System
+5.Click on delete icon in table
+6.Click on ""Ok"" for Are you sure you want to delete this record Abdomen ",Record should get delete,Manual,P4,Sankar,Low,V14,Function 
+AHC,TC_151,,Masters->Physical System-->Physical system parameter,Verify system symptom feature,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AHC from drop down.
+4.Navigate to Functions -> Masters->Physical System
+5.Click on Physical system parameter link
+6.Select Physical System from the drop down
+7.Select Existing Parameters check boxes as required from the drop down
+8.Click on save button
+9.Click on view or clear (if required)",Physical System parameter should get saved,Manual,P4,Sankar,Low,V9,Function 
+AT(Admission Module),TC_152,,Bed Setup - Building Master - Save,Verify User is able to add Building Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Building Master
+5. Enter Building Code, Building Name , Building Description, Select inactive or Active Radio Button and click on Save",User should be able to add Building Details,Manual,P4,Prabakaran,Low,V12,Function 
+AT(Admission Module),TC_153,,Bed Setup - Building Master - View,Verify User is able to View Building Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Building Master
+5. Enter Building Code or Building Name   click on View button",User should be able to view Building Details,Manual,P4,Prabakaran,Low,V8,Function 
+AT(Admission Module),TC_154,,Bed Setup - Location Master - Save,Verify User is able to add Location Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Location Master
+5. Enter Location Name , Level Name,  and click on Save",User should be able to Save new Location Details,Manual,P4,Prabakaran,Low,V5,Function 
+AT(Admission Module),TC_155,,Bed Setup - Location Master - View,Verify User is able to View Location Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Location Master
+5. Enter Location Name , Level Name and  click on View Button",User should be able to View Location Details,Manual,P4,Prabakaran,Low,V12,Function 
+AT(Admission Module),TC_156,Building Name,Bed Setup - Block Master - Save,Verify User is able to Save Block Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Block Master
+5. Select Building from drop down.
+6.Enter Block Name , Block Code, Block Description, Select Active or Inactive and click on Save",User should be able to save new Block Details,Manual,P4,Prabakaran,Low,V4,Function 
+AT(Admission Module),TC_157,Building Name,Bed Setup - Block Master - View,Verify User is able to View Block Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Block Master
+5. Select Building from drop down.
+6.Enter Block Name , Block Code and click on View Button",User should be able to View Block Details,Manual,P4,Prabakaran,Low,V1,Function 
+AT(Admission Module),TC_158,"Building Name
+Block Name",Bed Setup - Floor Master - Save,Verify User is able to Save Floor Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Floor Master
+5.Select Building and Block from Drop down, enter Floor Name and click on Save",User should be able to add new Floor Details,Manual,P4,Prabakaran,Low,V3,Function 
+AT(Admission Module),TC_159,"Building Name
+Block Name",Bed Setup - Floor Master - View,Verify User is able to View Floor Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Floor Master
+5.Select Building and Block from Drop down, enter Floor Name and click on View ",User should be able to view Floor Details,Manual,P4,Prabakaran,Low,V18,Function 
+AT(Admission Module),TC_160,"Building Name
+Block Name
+Floor Name",Bed Setup - Ward Master - Save,Verify User is able to Save Ward Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Ward Master
+5. Select Building, Block, Floor, Ward Type, Ward Category.
+6.Enter Ward code, Ward Name, Ward Description, Select state as active or inactive.
+7.Click on Change child Check box.
+8.Click on Save button.",User should be able to save new Ward Details,Manual,P4,Prabakaran,Low,V1,Function 
+AT(Admission Module),TC_161,"Building Name
+Block Name
+Floor Name",Bed Setup - Ward Master - View,Verify User is able to View Ward Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Ward Master
+5. Select Building, Block, Floor, Ward Type, Ward Category.
+6.Enter Ward code, Ward Name and Click on View Button",User should be able to view Ward Details,Manual,P4,Prabakaran,Low,V6,Function 
+AT(Admission Module),TC_162,"Building Name
+Block Name
+Floor Name
+Ward Name",Bed Setup - Room Master - Save,Verify User is able to Save Room Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Room Master
+5.Select Building, Block, Floor, Wards, Room Category, Room Code,Speciality, Room Description, Active or In Active Radio button and  and click on Save",User should be able to Savenew Room Details,Manual,P4,Prabakaran,Low,V18,Function 
+AT(Admission Module),TC_163,"Building Name
+Block Name
+Floor Name
+Ward Name",Bed Setup - Room Master - View,Verify User is able to View Room Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Room Master
+5.Select Building, Block, Floor, Wards, Room Category and Click on View Button",User should be able to view Room Details,Manual,P4,Prabakaran,Low,V7,Function 
+AT(Admission Module),TC_164,,Bed Setup - Category Master - Save,Verify User is able to Save Category Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Category Master
+5. Enter Category Type, Category Code, Bed Category, Rank, Sub Category, Enter Description, Select Active or InActive state and click on Save",User should be able to add new Category Details,Manual,P4,Prabakaran,Low,V12,Function 
+AT(Admission Module),TC_165,,Bed Setup - Category Master - View,Verify User is able to View Category Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Category Master
+5.Enter Category Type, Category Code, Bed Category, Rank, Sub Category and click on View",User should be able to view Category Details,Manual,P4,Prabakaran,Low,V16,Function 
+AT(Admission Module),TC_166,"Building Name
+Block Name
+Floor Name
+Ward Name
+Room Name
+Category Name",Bed Setup - Bed Master - Save,Verify User is able to save Bed Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Bed Master
+5. Select Building, Block, Floor, mapping of Bed, Ward, Room, Category Type, Bed Code, Speciality, Bed Type, Enter Description, Extn and Select Active or Inactive and Click on Save button",User should be able to Save new Bed Details,Manual,P4,Prabakaran,Low,V14,Function 
+AT(Admission Module),TC_167,"Building Name
+Block Name
+Floor Name
+Ward Name
+Room Name
+Category Name",Bed Setup - Bed Master - View,Verify User is able to View Bed Details,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Bed Setup -> Bed Master
+5. Select Building, Block, Floor, Ward, Room, Category Type, Bed Code, and Click on View button",User should be able to view Bed Details,Manual,P4,Prabakaran,Low,V3,Function 
+AT(Admission Module),TC_168,Category Name,Booking Setup - Save,Verify User is able to add Booking Setup,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Booking Setup
+5.Select Category 
+6.Enter Max Bed, Allowed Booking, Available Booking, Allowed Waiting List, Booking Date and Click on Save Button",User should be able to add new booking Setup,Manual,P4,Prabakaran,Low,V1,Function 
+AT(Admission Module),TC_169,Category Name,Booking Setup - View ,Verify User is able to View Booking Setup,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Booking Setup
+5.Enter Category and click on view Button",User should be able view Booking Setup,Manual,P4,Prabakaran,Low,V17,Function 
+AT(Admission Module),TC_170,,Booking Setup - Update,Verify User is able to Update Booking Setup Info,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Booking Setup
+5.Enter Category and click on view Button
+6.Click on Update icon
+7.Update the Data and click on Update Button.",User should be able to Update Data,Manual,P4,Prabakaran,Low,V1,Function 
+AT(Admission Module),TC_171,,Booking Setup - Delete,Verify User is able to Delete Booking Setup Info,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Booking Setup
+5.Enter Category and click on view Button
+6.Click on Delete icon",User should be able to Delete Data,Manual,P4,Prabakaran,Low,V10,Function 
+AT(Admission Module),TC_172,IP number,Dashboard - Cancel IP - Approve,Verify User is able to Approve Cancel Ip Admission,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Dashboard
+5.Click on cancel Ip button.
+6.Select the Required Record and click on  View Link.
+7.Enter Comments and Approve",User should be able to approve cancel IP admissions Details ,Manual,P4,Prabakaran,Low,V16,Function 
+AT(Admission Module),TC_173,IP number,Dashboard - Cancel IP - Reject,Verify User is able to Reject Cancel Ip Admission,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Dashboard
+5.Click on cancel Ip button.
+6.Select the Required Record and click on  View Link.
+7.Enter Comments and Reject Button",User should be able to Reject cancel IP admissions Details ,Manual,P4,Prabakaran,Low,V15,Function 
+AT(Admission Module),TC_174,,Dashboard - BillableCatMappingMaster,Verify User is able to Pass overRule Option on newly Created Bed Catagory List,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Navigate  Functions -> Master -> Dashboard
+5.Click on Billable Cat Mapping Master.
+6.Select Billable Bed Category 
+7.Select OverRule option as YES/NO
+8.Click on save button",OverRule option is Successfully added to the selected Bed Category,Manual,P4,Prabakaran,Low,V7,Function 
+AT(Admission Module),TC_175,Successfull Check in,Bed Booking - Bed Booking - Paper,To Verify the user able to create new Bed Booking,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Select Bed booking from Functions drop down.
+5.Enter the valid UHID number.
+6.Select Type of Booking 
+7.Select Admission Note Type as Paper.
+8.Select Specializations and Doctor Name
+9.Select MLC, Isolation Required, Infectious Check Boxes if required.
+10. Upload and Document if needed,and add comments.
+11. Select First Choice and Second Choice 
+12.Select Expected Admission Date and time and Reason For Booking, Attendent Name, Phone Number, Relationship and Address.
+13.Click on save button.",User should be able to create a Bed Booking using Paper Transaction,Automation ,P3,Prabakaran,Medium,V11,Function 
+AT(Admission Module),TC_176,Successfull Check in,Bed Booking - Bed Booking - Online,To Verify the user able to create new Bed Booking,"1.Launch the application
+2.Login to the application with valid credentials.
+3.Click on Patient Service Tab and select AT from the drop down.
+4.Select Bed booking from Functions drop down.
+5.Enter the valid UHID number.
+6.Select Type of Booking 
+7.Select Admission Note Type as Online.
+8.Admisssion Number will be generated.
+9.Select First Choice and Select Second Choice option from Dro Down.
+10.Select Expected Date and Time and Reason fot Booking.
+11. Attendent Name, Phone Number, Relationship and Address.
+12.Click on save button.",User should be able to create a Bed Booking using Online Transaction,Automation ,P3,Prabakaran,Medium,V12,Function 

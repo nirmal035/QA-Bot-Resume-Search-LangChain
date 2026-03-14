@@ -1,0 +1,3 @@
+Invoice 1: $1,500 - Tuition Fee
+Date: January 15, 2024
+Status: Paid

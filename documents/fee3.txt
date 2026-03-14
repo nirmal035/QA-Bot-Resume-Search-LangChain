@@ -1,0 +1,3 @@
+Invoice 3: $300 - Lab Fee
+Date: March 10, 2024
+Status: Paid
